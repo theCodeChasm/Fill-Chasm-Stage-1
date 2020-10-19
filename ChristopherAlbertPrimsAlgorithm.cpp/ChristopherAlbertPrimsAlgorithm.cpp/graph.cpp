@@ -17,6 +17,7 @@ WeightedGraph::WeightedGraph(int m)  {
 		mGraph = new int[mVertices * mVertices];
 		for (int i = 0; i < maxSize; i++)
 			mGraph[i] = 0;
+	
 }
 void WeightedGraph::set(int start, int destination) {
 	mGraph[start * mVertices + destination] = 1;
